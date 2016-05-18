@@ -31,7 +31,7 @@ void main()
 	sqList s;
 	keyList k;
 	int i=0;
-	k=(keyList)malloc(sizeof(keyList));
+	k=(keyList)malloc(sizeof(keyWord));
 	k->next=NULL;
 	printf("输入以 空格+Tab+ \\n 结束\n");
 	printf("----------------------------\n");
@@ -85,7 +85,7 @@ void createKeyWordList(keyList k)
 	q=k;
 	for(i=1;i<=35;i++)
 	{
-		p=(keyList) malloc(sizeof(keyList));
+		p=(keyList) malloc(sizeof(keyWord));
 		p->next=NULL;
 		switch(i)
 		{
